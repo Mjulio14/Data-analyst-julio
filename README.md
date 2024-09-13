@@ -64,6 +64,8 @@ Descriptive Statistics:
 Generate summary statistics (mean, median, mode) for numerical features like Total Scores and GDP per capita.
 Count the missing values and calculate their proportion across columns to identify gaps in the data.
 
+![ ](https://github.com/Mjulio14/Data-analyst-julio/blob/main/Images/Summary%20Statistics.jpg)
+
 Data Visualization:
 
 Histograms and Boxplots: Analyze the distribution of continuous variables such as government pillar scores and technology sector scores.
