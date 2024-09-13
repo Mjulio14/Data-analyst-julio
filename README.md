@@ -72,6 +72,8 @@ Histograms and Boxplots: Analyze the distribution of continuous variables such a
 Bar Charts: Display performance differences across continents, focusing on overall scores and specific pillars.
 Heatmaps: Visualize correlations between numerical variables like GDP, government pillar, and technology sector.
 
+![ ](https://github.com/Mjulio14/Data-analyst-julio/blob/main/Images/Distribution%20of%20Individual%20Variables.png)
+
 Performance Analysis:
 
 By Continent: Compare average performance scores across continents, highlighting top and low performers.
