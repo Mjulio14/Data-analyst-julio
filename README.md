@@ -80,9 +80,16 @@ By Continent: Compare average performance scores across continents, highlighting
 By Pillars: Investigate how key pillars like Government and Technology affect overall country performance.
 By GDP per Capita: Examine how economic factors such as GDP per capita relate to overall country performance.
 
+![image](https://github.com/user-attachments/assets/58ea18af-933b-44e5-a513-4b1e82e9ea56)
+![image](https://github.com/user-attachments/assets/e174d514-7b4a-4531-ac6d-8ff45c619923)
+![image](https://github.com/user-attachments/assets/f0b51420-3e81-494f-88f0-86d35ee11db5)
+
+
 Insights and Findings:
 
 Summarize key findings based on data visualizations and statistical analyses, such as identifying higher performance in certain continents or the importance of government and technology pillars in influencing total scores.
+
+![image](https://github.com/user-attachments/assets/bb2e264c-46ef-4fa7-a565-2243a02356ed)
 
 Conclusion:
 
