@@ -72,6 +72,19 @@ Histograms and Boxplots: Analyze the distribution of continuous variables such a
 Bar Charts: Display performance differences across continents, focusing on overall scores and specific pillars.
 Heatmaps: Visualize correlations between numerical variables like GDP, government pillar, and technology sector.
 
+Global analysis of the data reveals variation in economic and technological development across countries. Globally, scores vary widely, with some countries achieving high levels of infrastructure, technology and regulatory quality, while others face greater challenges in these areas.
+
+In Asia, Singapore is the leader with a total score of 81.97, excelling in all pillars, especially in governance and data infrastructure. South Korea also ranks highly with a score of 75.65. However, countries such as Malaysia, while having good overall scores, still need improvement in their technology sector. In contrast, China, although strong in data infrastructure, shows areas for improvement in its technology sector.
+
+In South America, Brazil is one of the standout countries with a high penetration of mobile technology and a significant attraction of foreign direct investment. However, its GDP per capita is lower and needs to improve its fixed capital formation. The same is true for Argentina and Chile, which have been improving over the years.
+
+On the African side, Ghana stands out negatively, with the lowest scores on several key indicators. This reflects an urgent need for improvement in areas of infrastructure, technology and regulatory quality. South Africa, while scoring better, still faces significant challenges in terms of economic stability and technological development.
+
+Overall, to improve, many countries need to focus on developing their technology and data infrastructure, attracting more foreign direct investment, and improving regulatory quality to foster a more stable economic environment conducive to growth. 
+
+![image](https://github.com/user-attachments/assets/73125429-b907-45a0-b5bb-939f382b1110)
+
+
 ![ ](https://github.com/Mjulio14/Data-analyst-julio/blob/main/Images/Distribution%20of%20Individual%20Variables.png)
 
 Performance Analysis:
@@ -80,14 +93,31 @@ By Continent: Compare average performance scores across continents, highlighting
 By Pillars: Investigate how key pillars like Government and Technology affect overall country performance.
 By GDP per Capita: Examine how economic factors such as GDP per capita relate to overall country performance.
 
+Through the correlation test performed on the database, we were able to find certain findings and trends
+
 ![image](https://github.com/user-attachments/assets/58ea18af-933b-44e5-a513-4b1e82e9ea56)
-![image](https://github.com/user-attachments/assets/e174d514-7b4a-4531-ac6d-8ff45c619923)
-![image](https://github.com/user-attachments/assets/f0b51420-3e81-494f-88f0-86d35ee11db5)
+
+There is a high correlation between the Global Ranking with Gross Domestic Savings and GDP per capita, indicating that if emerging economies want to improve in the ranking, they must increase their savings and GDP per capita. 
+
+As for the Oxford Insight pillars, the Government Pillar and the Technology Sector Pillar, they have a fairly high correlation with Gross Domestic Savings, this indicates that the more developed countries and positioned in the adoption of AI tend to have a higher domestic savings, as for emerging economies, to improve these pillars should start saving much more. Likewise, these two pillars have a high-moderate correlation with regulatory quality, which means that the better the legislation, the better the environment for innovation and AI deployment, the better it allows new technologies to develop and use their functions in an ethical and safe manner.
+
+Finally the last pillar of Data & Infrastructure Pillar shows a high correlation with GDP per capita and regulatory quality, this indicates that to improve in terms of data and infrastructure there is a relationship with the GDP per capita of the country, the higher the GDP per capita the higher the infrastructure for data, in emerging economies this is extremely important because this index measures the ability to scale that have the data, if you do not ensure a solid infrastructure, new technologies such as AI may be limited.
+
+In summary, in order to improve the adaptation of AI in emerging countries, the first priority should be to increase gross domestic savings, improve regulatory quality and increase GDP per capita.
+
+
+Comparison by continent:
+The chart shows that Asia and South America lead in economic and technological development, with consistently high average total scores across 2021, 2022 and 2023. This indicates robust and sustained growth in these regions, driven by countries such as Singapore, South Korea and Brazil. South America has moderate and stable scores, suggesting a medium level of development with potential for improvement, with Brazil and Argentina as the main contributors.
+ 
+On the other hand, Africa has the lowest average scores, although it shows a slight improvement in 2022 before a small drop in 2023. This suggests that, despite some progress, the region still faces significant challenges in terms of economic and technological development. The chart highlights clear regional differences in terms of development, underscoring the need for region-specific strategies to foster sustained and balanced growth.
+
+![image](https://github.com/user-attachments/assets/4f0b1b5b-24f5-4454-851a-d2b8eb3710a6)
 
 
 Insights and Findings:
 
-Summarize key findings based on data visualizations and statistical analyses, such as identifying higher performance in certain continents or the importance of government and technology pillars in influencing total scores.
+When analyzing the comparative graphs between high- and low-performing countries, it is observed that high-performing countries consistently outperform low-performing countries on indicators such as the governance pillar, the technology sector, data infrastructure and GDP per capita. This suggests that these factors are crucial for economic and technological development. High-performing countries, which include regions in Asia and South America, show a clear advantage in these areas, highlighting the importance of investing in technology and infrastructure.
+On the other hand, low-performing countries, predominantly in Africa, it shows an urgent need to improve these indicators to boost their development. The analysis highlights that improving the quality of governance, strengthening the technology sector, developing data infrastructure and increasing GDP per capita are essential to closing the development gap between high- and low-performing regions.
 
 ![image](https://github.com/user-attachments/assets/bb2e264c-46ef-4fa7-a565-2243a02356ed)
 
