@@ -82,8 +82,6 @@ On the African side, Ghana stands out negatively, with the lowest scores on seve
 
 Overall, to improve, many countries need to focus on developing their technology and data infrastructure, attracting more foreign direct investment, and improving regulatory quality to foster a more stable economic environment conducive to growth. 
 
-![image](https://github.com/user-attachments/assets/73125429-b907-45a0-b5bb-939f382b1110)
-
 
 ![ ](https://github.com/Mjulio14/Data-analyst-julio/blob/main/Images/Distribution%20of%20Individual%20Variables.png)
 
@@ -95,7 +93,7 @@ By GDP per Capita: Examine how economic factors such as GDP per capita relate to
 
 Through the correlation test performed on the database, we were able to find certain findings and trends
 
-![image](https://github.com/user-attachments/assets/58ea18af-933b-44e5-a513-4b1e82e9ea56)
+
 
 There is a high correlation between the Global Ranking with Gross Domestic Savings and GDP per capita, indicating that if emerging economies want to improve in the ranking, they must increase their savings and GDP per capita. 
 
@@ -111,7 +109,7 @@ The chart shows that Asia and South America lead in economic and technological d
  
 On the other hand, Africa has the lowest average scores, although it shows a slight improvement in 2022 before a small drop in 2023. This suggests that, despite some progress, the region still faces significant challenges in terms of economic and technological development. The chart highlights clear regional differences in terms of development, underscoring the need for region-specific strategies to foster sustained and balanced growth.
 
-![image](https://github.com/user-attachments/assets/4f0b1b5b-24f5-4454-851a-d2b8eb3710a6)
+
 
 
 Insights and Findings:
