@@ -93,6 +93,7 @@ By GDP per Capita: Examine how economic factors such as GDP per capita relate to
 
 Through the correlation test performed on the database, we were able to find certain findings and trends
 
+![image](https://github.com/user-attachments/assets/7aabba96-cc1d-42af-9e41-8470f647a53d)
 
 
 There is a high correlation between the Global Ranking with Gross Domestic Savings and GDP per capita, indicating that if emerging economies want to improve in the ranking, they must increase their savings and GDP per capita. 
@@ -109,7 +110,7 @@ The chart shows that Asia and South America lead in economic and technological d
  
 On the other hand, Africa has the lowest average scores, although it shows a slight improvement in 2022 before a small drop in 2023. This suggests that, despite some progress, the region still faces significant challenges in terms of economic and technological development. The chart highlights clear regional differences in terms of development, underscoring the need for region-specific strategies to foster sustained and balanced growth.
 
-
+![image](https://github.com/user-attachments/assets/a78283d5-fbd9-432d-9a64-e8f4bbd00987)
 
 
 Insights and Findings:
@@ -121,14 +122,13 @@ On the other hand, low-performing countries, predominantly in Africa, it shows a
 
 Conclusion:
 
-Discuss the broader implications of the findings, such as the potential policy focus for underperforming regions or the need for further analyses, like predictive models to forecast performance scores based on various indicators.
+In conclusion, we can say that the countries of Asia and South America are better prepared for the use of Artificial Intelligence, as well as these countries already have solid structures that allow them to develop new digital tools in the future. For Africa, there are still pillars to improve for this continent to take off in the adoption of this new technology.
 
 Tools and Technologies:
 
 Python: Pandas, NumPy, Matplotlib, Seaborn for data manipulation and visualization.
 Jupyter Notebook for interactive data exploration and documentation of steps.
-Optional: Tableau or Power BI for advanced visualizations and presentation.
-Deliverables:
+
 
 A comprehensive Jupyter Notebook documenting all steps of the analysis, with code, visualizations, and explanations of findings.
 A presentation summarizing key insights and visualizations, suitable for stakeholders or peers.
