@@ -52,8 +52,12 @@ Methodology:
 Data Collection and Preparation:
 
 Load the Oxford Insight dataset using Python libraries like Pandas.
+
 ![ ](https://github.com/Mjulio14/Data-analyst-julio/blob/main/Images/Data%20Collection%20and%20Data%20Cleaning.jpg)
-Perform initial data cleaning, which includes handling missing values, correcting data types, and ensuring clarity in column names.
+
+Perform initial data cleaning, which includes handling missing values, correcting data types, and ensuring clarity in column names
+
+![ ](https://github.com/Mjulio14/Data-analyst-julio/blob/main/Images/Data%20Cleaning.jpg)
 
 Descriptive Statistics:
 
