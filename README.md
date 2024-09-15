@@ -1,134 +1,173 @@
 # Data-analyst-julio
 
-Exploratory Data Analysis
-Project Description: Exploratory Data Analysis (EDA) on Oxford Insight Dataset
+Project Description: Exploratory Data Analysis (EDA) on Vancouver Property Tax Dataset
 
-Project Title: Analyzing Performance Scores Across Continents: An Exploratory Data Analysis
+Project Title: Understanding Property Tax Trends in Vancouver: An Exploratory Data Analysis
 
-Objective: The primary goal of this project is to perform an exploratory data analysis (EDA) on the Oxford Insight dataset, with a focus on understanding trends and patterns in performance scores across continents. By analyzing different indicators such as government pillars, technology sectors, and GDP per capita, we aim to gain insights into what influences high performance in different regions.
+Objective: The primary goal of this project is to perform an exploratory data analysis (EDA) on the Vancouver Property Tax dataset. This analysis focuses on uncovering trends and patterns in property tax values across different property types and neighbourhoods. By analyzing various indicators such as land value, improvement value, neighbourhood code, and zoning classification, we aim to identify the factors influencing property tax assessments in Vancouver.
 
-Dataset: The Oxford Insight dataset contains various country performance indicators, including:
+Dataset:
+The Vancouver Property Tax dataset contains the following features:
 
-• Country: The name of each country analyzed.
-• Global Ranking (2023): The country's global ranking in 2023.
-• Total score (2023): The total performance score for the country in 2023.
-• Government Pillar (2023): The score for the government sector in 2023.
-• Technology Sector Pillar (2023): The score for the technology sector in 2023.
-• Data & Infrastructure Pillar (2023): The score for data and infrastructure in 2023.
-• Foreign direct investment, net inflows (% of GDP) (2023): Foreign direct investment as a percentage of GDP for 2023.
-• GDP per capita (current US$) (2023): The gross domestic product per capita in current US dollars for 2023.
-• Gross domestic savings (% of GDP) (2023): The gross domestic savings as a percentage of GDP for 2023.
-• Gross fixed capital formation (% of GDP) (2023): The gross fixed capital formation as a percentage of GDP for 2023.
-• Gross fixed capital formation (current US$) (2023): The gross fixed capital formation in current US dollars for 2023.
-• Mobile cellular subscriptions (2023): The number of mobile cellular subscriptions in 2023.
-• Regulatory Quality: Estimate (2023): An estimate of the quality of regulations in 2023.
-• Global Position (2022): The global position of the country in 2022.
-• Total score (2022): The total performance score for the country in 2022.
-• Government Pillar (2022): The score for the government sector in 2022.
-• Technology Sector Pillar (2022): The score for the technology sector in 2022.
-• Data & Infrastructure Pillar (2022): The score for data and infrastructure in 2022.
-• Foreign direct investment, net inflows (% of GDP) (2022): Foreign direct investment as a percentage of GDP for 2022.
-• GDP per capita (current US$) (2022): The gross domestic product per capita in current US dollars for 2022.
-• Gross domestic savings (% of GDP) (2022): The gross domestic savings as a percentage of GDP for 2022.
-• Gross fixed capital formation (% of GDP) (2022): The gross fixed capital formation as a percentage of GDP for 2022.
-• Gross fixed capital formation (current US$) (2022): The gross fixed capital formation in current US dollars for 2022.
-• Mobile cellular subscriptions (2022): The number of mobile cellular subscriptions in 2022.
-• Regulatory Quality: Estimate (2022): An estimate of the quality of regulations in 2022.
-• Global Position (2021): The global position of the country in 2021.
-• Overall Score (2021): The overall performance score for the country in 2021.
-• Government (2021): The score for the government sector in 2021.
-• Technology Sector (2021): The score for the technology sector in 2021.
-• Data & Infrastructure Pillar (2021): The score for data and infrastructure in 2021.
-• Foreign direct investment, net inflows (% of GDP) (2021): Foreign direct investment as a percentage of GDP for 2021.
-• GDP per capita (current US$) (2021): The gross domestic product per capita in current US dollars for 2021.
-• Gross domestic savings (% of GDP) (2021): The gross domestic savings as a percentage of GDP for 2021.
-• Gross fixed capital formation (% of GDP) (2021): The gross fixed capital formation as a percentage of GDP for 2021.
-• Gross fixed capital formation (current US$) (2021): The gross fixed capital formation in current US dollars for 2021.
-• Mobile cellular subscriptions (2021): The number of mobile cellular subscriptions in 2021.
-• Regulatory Quality: Estimate (2021): An estimate of the quality of regulations in 2021.
+- PID: Property ID, a unique identifier for each property.
+- LEGAL_TYPE: Legal classification of the property (e.g., strata).
+- FOLIO: A unique number for tracking property.
+- LAND_COORDINATE: Coordinates related to the property’s location.
+- ZONING_DISTRICT: The zoning district in which the property is located.
+- ZONING_CLASSIFICATION: The classification of the property within its zoning district (e.g., Residential, Commercial).
+- LOT: The lot number of the property.
+- PLAN: The plan number for the property.
+- BLOCK: The block number where the property is located.
+- DISTRICT_LOT: The district lot number of the property.
+- FROM_CIVIC_NUMBER: The starting civic number of the property’s address.
+- TO_CIVIC_NUMBER: The ending civic number of the property’s address.
+- STREET_NAME: The name of the street where the property is located.
+- PROPERTY_POSTAL_CODE: The postal code of the property.
+- NARRATIVE_LEGAL_LINE1: Legal description of the property (line 1).
+- NARRATIVE_LEGAL_LINE2: Legal description of the property (line 2).
+- NARRATIVE_LEGAL_LINE3: Legal description of the property (line 3).
+- NARRATIVE_LEGAL_LINE4: Legal description of the property (line 4).
+- NARRATIVE_LEGAL_LINE5: Legal description of the property (line 5).
+- CURRENT_LAND_VALUE: The current assessed value of the land.
+- CURRENT_IMPROVEMENT_VALUE: The current assessed value of the improvements (buildings) on the land.
+- TAX_ASSESSMENT_YEAR: The year in which the tax assessment was made.
+- PREVIOUS_LAND_VALUE: The assessed land value from the previous year.
+- PREVIOUS_IMPROVEMENT_VALUE: The assessed improvement value from the previous year.
+- YEAR_BUILT: The year the property was built.
+- BIG_IMPROVEMENT_YEAR: The year when a significant improvement was made to the property.
+- TAX_LEVY: The total tax levied on the property.
+- NEIGHBOURHOOD_CODE: A code representing the neighborhood where the property is located.
+- REPORT_YEAR: The year of the property report.
 
-Methodology:
-
+Methodology
 Data Collection and Preparation:
+1.- Load the Dataset:
+The Vancouver Property Tax dataset was loaded using Python's Pandas library. This dataset consists of 29 columns, including identifiers, tax-related data, and property information.
 
-Load the Oxford Insight dataset using Python libraries like Pandas.
+![image](https://github.com/user-attachments/assets/f36afa58-8111-445f-9f05-d7d7c022d1a9)
 
-![ ](https://github.com/Mjulio14/Data-analyst-julio/blob/main/Images/Data%20Collection%20and%20Data%20Cleaning.jpg)
+2.- Initial Data Cleaning:
+Initial data cleaning involved identifying and handling missing values and ensuring that all columns had the correct data types. Columns with missing values, such as TAX_LEVY and CURRENT_LAND_VALUE, were filled using the mean for numerical columns and "Unknown" for categorical columns.
 
-Perform initial data cleaning, which includes handling missing values, correcting data types, and ensuring clarity in column names
+![image](https://github.com/user-attachments/assets/89aec386-db1d-44aa-b4ff-767ce9402d14)
 
-![ ](https://github.com/Mjulio14/Data-analyst-julio/blob/main/Images/Data%20Cleaning.jpg)
+![image](https://github.com/user-attachments/assets/bbbf80b0-bee6-4c43-9f2d-f2043a46084c)
 
 Descriptive Statistics:
 
-Generate summary statistics (mean, median, mode) for numerical features like Total Scores and GDP per capita.
-Count the missing values and calculate their proportion across columns to identify gaps in the data.
+Summary statistics were generated for numerical features like TAX_LEVY and CURRENT_LAND_VALUE to provide insights into the distribution, mean, and range of values.
 
-![ ](https://github.com/Mjulio14/Data-analyst-julio/blob/main/Images/Summary%20Statistics.jpg)
+![image](https://github.com/user-attachments/assets/ec9f6cd5-7dfe-4acd-bf6e-c453969f2a89)
+
+![image](https://github.com/user-attachments/assets/91266af8-dd6c-4af3-bdad-c65195c44259)
 
 Data Visualization:
 
-Histograms and Boxplots: Analyze the distribution of continuous variables such as government pillar scores and technology sector scores.
-Bar Charts: Display performance differences across continents, focusing on overall scores and specific pillars.
-Heatmaps: Visualize correlations between numerical variables like GDP, government pillar, and technology sector.
+1.- Histograms and Boxplots:
+Objective: Analyze the distribution of continuous variables such as TAX_LEVY and CURRENT_LAND_VALUE.
 
-Global analysis of the data reveals variation in economic and technological development across countries. Globally, scores vary widely, with some countries achieving high levels of infrastructure, technology and regulatory quality, while others face greater challenges in these areas.
+Histogram for TAX_LEVY:
+We use a histogram to understand the distribution of property tax levies across the dataset. This helps identify the range of taxes and detect any skewness in the data.
 
-In Asia, Singapore is the leader with a total score of 81.97, excelling in all pillars, especially in governance and data infrastructure. South Korea also ranks highly with a score of 75.65. However, countries such as Malaysia, while having good overall scores, still need improvement in their technology sector. In contrast, China, although strong in data infrastructure, shows areas for improvement in its technology sector.
-
-In South America, Brazil is one of the standout countries with a high penetration of mobile technology and a significant attraction of foreign direct investment. However, its GDP per capita is lower and needs to improve its fixed capital formation. The same is true for Argentina and Chile, which have been improving over the years.
-
-On the African side, Ghana stands out negatively, with the lowest scores on several key indicators. This reflects an urgent need for improvement in areas of infrastructure, technology and regulatory quality. South Africa, while scoring better, still faces significant challenges in terms of economic stability and technological development.
-
-Overall, to improve, many countries need to focus on developing their technology and data infrastructure, attracting more foreign direct investment, and improving regulatory quality to foster a more stable economic environment conducive to growth. 
+![image](https://github.com/user-attachments/assets/a2c79594-dc97-4dc7-83f3-1b641ce3168e)
+![image](https://github.com/user-attachments/assets/ac03326d-2d7d-4e92-aa8c-d303bede8dd0)
 
 
-![ ](https://github.com/Mjulio14/Data-analyst-julio/blob/main/Images/Distribution%20of%20Individual%20Variables.png)
+Explanation:
+The histogram shows the frequency distribution of property tax amounts. Most properties fall within the middle tax ranges, with fewer properties having very high or very low tax levies.
 
-Performance Analysis:
+Boxplot for CURRENT_LAND_VALUE:
+The boxplot is used to detect outliers and understand the spread of land values across the dataset.
 
-By Continent: Compare average performance scores across continents, highlighting top and low performers.
-By Pillars: Investigate how key pillars like Government and Technology affect overall country performance.
-By GDP per Capita: Examine how economic factors such as GDP per capita relate to overall country performance.
+![image](https://github.com/user-attachments/assets/fc089177-da4b-4a4c-b48b-7d7af4288081)
+![image](https://github.com/user-attachments/assets/0d36b063-2773-4e87-a201-8009f5d801bb)
 
-Through the correlation test performed on the database, we were able to find certain findings and trends
+Explanation:
+The boxplot reveals that most properties have land values clustered within a specific range, but there are a few outliers with significantly higher or lower land values.
 
-![image](https://github.com/user-attachments/assets/7aabba96-cc1d-42af-9e41-8470f647a53d)
+2.-  Bar Chart for Property Class Distribution
+Objective: Show the distribution of property classifications (ZONING_CLASSIFICATION) across the dataset.
 
+![image](https://github.com/user-attachments/assets/61b14675-92ad-44a8-9ba7-d67822e4d5b1)
 
-There is a high correlation between the Global Ranking with Gross Domestic Savings and GDP per capita, indicating that if emerging economies want to improve in the ranking, they must increase their savings and GDP per capita. 
+Explanation:
+The bar chart illustrates the count of properties for each zoning classification. This gives a clear picture of whether the majority of properties fall under residential, commercial, or other classifications.
 
-As for the Oxford Insight pillars, the Government Pillar and the Technology Sector Pillar, they have a fairly high correlation with Gross Domestic Savings, this indicates that the more developed countries and positioned in the adoption of AI tend to have a higher domestic savings, as for emerging economies, to improve these pillars should start saving much more. Likewise, these two pillars have a high-moderate correlation with regulatory quality, which means that the better the legislation, the better the environment for innovation and AI deployment, the better it allows new technologies to develop and use their functions in an ethical and safe manner.
+3.- Heatmap for Correlation Between Numerical Variables
+Objective: Visualize the correlation between key numerical variables, such as TAX_LEVY, CURRENT_LAND_VALUE, CURRENT_IMPROVEMENT_VALUE, and others.
 
-Finally the last pillar of Data & Infrastructure Pillar shows a high correlation with GDP per capita and regulatory quality, this indicates that to improve in terms of data and infrastructure there is a relationship with the GDP per capita of the country, the higher the GDP per capita the higher the infrastructure for data, in emerging economies this is extremely important because this index measures the ability to scale that have the data, if you do not ensure a solid infrastructure, new technologies such as AI may be limited.
+![image](https://github.com/user-attachments/assets/68ad1f83-e602-4091-aa33-bf7ae567f539)
 
-In summary, in order to improve the adaptation of AI in emerging countries, the first priority should be to increase gross domestic savings, improve regulatory quality and increase GDP per capita.
+The heatmap shows the correlations between various numerical columns. For example, there may be a strong correlation between CURRENT_LAND_VALUE and TAX_LEVY, indicating that properties with higher land values tend to pay higher taxes.
 
+4.- Boxplot for Tax Distribution by Property Class
+Objective: Compare property tax distributions across different property classes (ZONING_CLASSIFICATION).
 
-Comparison by continent:
-The chart shows that Asia and South America lead in economic and technological development, with consistently high average total scores across 2021, 2022 and 2023. This indicates robust and sustained growth in these regions, driven by countries such as Singapore, South Korea and Brazil. South America has moderate and stable scores, suggesting a medium level of development with potential for improvement, with Brazil and Argentina as the main contributors.
- 
-On the other hand, Africa has the lowest average scores, although it shows a slight improvement in 2022 before a small drop in 2023. This suggests that, despite some progress, the region still faces significant challenges in terms of economic and technological development. The chart highlights clear regional differences in terms of development, underscoring the need for region-specific strategies to foster sustained and balanced growth.
+![image](https://github.com/user-attachments/assets/86150905-5dd3-4592-ac0b-c12750b8d74a)
 
-![image](https://github.com/user-attachments/assets/a78283d5-fbd9-432d-9a64-e8f4bbd00987)
+Explanation:
+The boxplot shows how property taxes vary by zoning classification. For example, commercial properties might have higher tax levies compared to residential properties.
 
+5.- Boxplot for Tax Distribution by Neighborhood Code
+Objective: Analyze how property tax distribution differs across various neighbourhoods.
 
-Insights and Findings:
+![image](https://github.com/user-attachments/assets/a34345f5-1c1c-40cc-8921-8eeb5213acb1)
 
-When analyzing the comparative graphs between high- and low-performing countries, it is observed that high-performing countries consistently outperform low-performing countries on indicators such as the governance pillar, the technology sector, data infrastructure and GDP per capita. This suggests that these factors are crucial for economic and technological development. High-performing countries, which include regions in Asia and South America, show a clear advantage in these areas, highlighting the importance of investing in technology and infrastructure.
-On the other hand, low-performing countries, predominantly in Africa, it shows an urgent need to improve these indicators to boost their development. The analysis highlights that improving the quality of governance, strengthening the technology sector, developing data infrastructure and increasing GDP per capita are essential to closing the development gap between high- and low-performing regions.
+This boxplot helps to analyze the variation in property taxes across different neighbourhoods. It highlights which neighbourhoods tend to have higher or lower taxes.
 
-![image](https://github.com/user-attachments/assets/bb2e264c-46ef-4fa7-a565-2243a02356ed)
+Performance Analysis
+Objective: Analyze the performance of different property types, neighborhoods, and key variables such as tax levies and land values.
 
-Conclusion:
+1. Performance by Property Class
+This analysis compares average property taxes across different property classifications (ZONING_CLASSIFICATION) to determine which class has higher tax levies.
 
-In conclusion, we can say that the countries of Asia and South America are better prepared for the use of Artificial Intelligence, as well as these countries already have solid structures that allow them to develop new digital tools in the future. For Africa, there are still pillars to improve for this continent to take off in the adoption of this new technology.
+![image](https://github.com/user-attachments/assets/109c3025-56f0-4c6f-b204-ec66c452a8f4)
 
-Tools and Technologies:
+Explanation:
+This analysis reveals that commercial properties tend to have higher average tax levies compared to residential properties. This can be attributed to higher land values and infrastructure in commercial zones.
 
-Python: Pandas, NumPy, Matplotlib, Seaborn for data manipulation and visualization.
-Jupyter Notebook for interactive data exploration and documentation of steps.
+2. Performance by Neighborhood Code
+This section analyzes the performance of properties by their neighborhood code (NEIGHBOURHOOD_CODE) to understand which neighborhoods contribute more to tax revenue.
 
+![image](https://github.com/user-attachments/assets/11186ad7-e0cd-403d-9710-4fc0e28eda5a)
 
-A comprehensive Jupyter Notebook documenting all steps of the analysis, with code, visualizations, and explanations of findings.
-A presentation summarizing key insights and visualizations, suitable for stakeholders or peers.
+Explanation:
+Some neighborhoods contribute significantly more in property taxes than others, likely due to higher property values or the presence of commercial infrastructure.
+
+3. Performance by Land Value
+This section analyzes the relationship between land value (CURRENT_LAND_VALUE) and tax levies to understand how land valuation impacts property taxes.
+
+![image](https://github.com/user-attachments/assets/93c9962d-a76a-4c95-8f3e-2cfa8dd26d2f)
+
+Explanation:
+The scatter plot reveals a positive relationship between land value and tax levy. Properties with higher land values generally pay more in taxes, which is expected as property taxes are often based on land valuation.
+
+Insights and Findings
+High-performing Property Classes:
+Commercial properties consistently show higher tax levies compared to residential properties. This suggests that commercial zones contribute more to the overall tax revenue due to higher land values and improvements.
+
+Variation Across Neighborhoods:
+Neighborhoods with higher average property taxes are likely to be more affluent or have a higher density of commercial properties. This insight is critical for city planning and budget allocation, as tax revenue is a major source of public funding.
+
+Land Value Correlation:
+There is a clear and strong positive correlation between land value and tax levies. This means that properties with higher land assessments contribute more to the city's tax revenue, reinforcing the importance of accurate land valuations.
+
+Zoning and Development Impact:
+Properties in neighborhoods zoned for commercial use not only have higher land values but also generate significantly more taxes. Future zoning and development plans should consider the tax implications of land use to optimize revenue.
+
+Conclusion
+The analysis of the Vancouver Property Tax dataset provides several important insights. Commercial properties and properties in affluent neighborhoods contribute the most to property tax revenues. The strong correlation between land value and property taxes underscores the importance of maintaining accurate and updated land assessments.
+
+The findings also indicate that certain neighborhoods contribute significantly more in taxes, which has important implications for city planning and infrastructure development. Areas with lower tax revenues may benefit from targeted investments to improve property values and, by extension, tax contributions.
+
+Overall, the analysis highlights the importance of property valuation in determining tax revenue and suggests that efforts to improve land value assessments could lead to more equitable and efficient tax systems.
+
+Tools and Techniques
+Python:
+
+Pandas: Used for data manipulation, cleaning, and analysis. It allowed easy handling of missing values, grouping, and summarizing data for visualization.
+NumPy: Used for numerical operations, including filling missing values with statistical methods.
+Matplotlib: This library was used to create histograms, scatter plots, and bar charts for visualizing various relationships in the dataset.
+Seaborn: Used for generating more sophisticated visualizations like heatmaps and boxplots to uncover trends and correlations in the data.
+Jupyter Notebook:
+This tool was used to perform the analysis interactively. It enabled easy documentation of the steps involved in data cleaning, exploration, and visualization.
